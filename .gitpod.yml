@@ -3,7 +3,7 @@ tasks:
   - name: Setup CLI
     before: npm install -g @hubspot/cli@next
     init:  cd example-meal-order # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-    command: hs auth
+    command: hs init
     # command: echo 'success! Run hs project dev next'
 
 # # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
