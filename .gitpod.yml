@@ -1,8 +1,8 @@
 # List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
 tasks:
   - name: Setup CLI
-    before: npm install -g @hubspot/cli@next
-    init:  cd example-meal-order # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
+    # before: 
+    init:  npm install -g @hubspot/cli@next && cd example-meal-order # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
     command: hs init
     # command: echo 'success! Run hs project dev next'
 
